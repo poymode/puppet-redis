@@ -38,6 +38,16 @@ redis::instance { 'redis-6900':
 }
 ```
 
+Hiera support
+```yaml
+redis::instances:
+  'redis-6900':
+    'redis_port': '6900'
+    'redis_bind_address: '10.1.2.3'
+    'redis_password': 'passwort'
+    'redis_max_memory': '1gb'
+```
+
 Development
 -----------
 
